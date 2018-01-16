@@ -1,0 +1,106 @@
+package edu.fju.exam;
+
+import java.util.Scanner;
+
+public class VendingMachine {
+
+	public static void main(String[] args) {
+		int m = 0;
+		int z = -1;
+		Drink d1 = new Drink("a", 10);
+		Drink d2 = new Drink("b", 15);
+		Drink d3 = new Drink("c", 10);
+		Drink d4 = new Drink("d", 18);
+		Drink d5 = new Drink("e", 10);
+		Drink d6 = new Drink("f", 20);
+		Drink d7 = new Drink("g", 15);
+		Drink d8 = new Drink("h", 18);
+		while (z != 0) {
+			System.out.println("販賣機餘額:" + " " + m + "元");
+			System.out.println("請投幣或選擇飲料，或輸入0結束:");
+			Scanner scanner = new Scanner(System.in);
+			String line = scanner.nextLine();
+			switch (line) {
+			case "1":
+				m = m + 1;
+				break;
+			case "5":
+				m = m + 5;
+				break;
+			case "10":
+				m = m + 10;
+				break;
+			case "a":
+				if (m >= 10) {
+					System.out.println("Don!");
+					m = m - 10;
+				} else {
+					System.out.println("BEEP!");
+				}
+				break;
+			case "b":
+				if (m >= 15) {
+					System.out.println("Don!");
+					m = m - 15;
+				} else {
+					System.out.println("BEEP!");
+				}
+				break;
+			case "c":
+				if (m >= 10) {
+					System.out.println("Don!");
+					m = m - 10;
+				} else {
+					System.out.println("BEEP!");
+				}
+				break;
+			case "d":
+				if (m >= 18) {
+					System.out.println("Don!");
+					m = m - 18;
+				} else {
+					System.out.println("BEEP!");
+				}
+				break;
+			case "e":
+				if (m >= 10) {
+					System.out.println("Don!");
+					m = m - 10;
+				} else {
+					System.out.println("BEEP!");
+				}
+				break;
+			case "f":
+				if (m >= 20) {
+					System.out.println("Don!");
+					m = m - 20;
+				} else {
+					System.out.println("BEEP!");
+				}
+				break;
+			case "g":
+				if (m >= 15) {
+					System.out.println("Don!");
+					m = m - 15;
+				} else {
+					System.out.println("BEEP!");
+				}
+				break;
+			case "h":
+				if (m >= 18) {
+					System.out.println("Don!");
+					m = m - 18;
+				} else {
+					System.out.println("BEEP!");
+				}
+				break;
+			case "0":
+				System.out.println("結束!");
+				z = 0;
+				break;
+			}
+
+		}
+	}
+
+}
