@@ -1,0 +1,11 @@
+package edu.fju.exam;
+
+public class employee {
+	String name;
+	int m;
+	public employee(String name,int m){
+		this.name=name;
+		this.m=m;
+		
+	}
+}

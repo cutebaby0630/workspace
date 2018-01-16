@@ -1,0 +1,13 @@
+package edu.fju.exam;
+
+public class Employee {
+	String name;
+	int m;
+	public Employee(String name,int m){
+		this.name=name;
+		this.m=m;
+	}
+	public void print(){
+		System.out.println(name + " \t" + m);
+	}
+}
