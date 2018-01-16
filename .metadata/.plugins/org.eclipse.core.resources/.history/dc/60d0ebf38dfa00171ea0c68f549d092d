@@ -9,7 +9,7 @@ public class Director extends Employee {
 		}
 	@Override
 	public void print(){
-		System.out.println(name +"\t"+(m+5000)+"("+b+")"+"\t");
+		System.out.println(name +"\t"+m+"("+b+")"+"\t");
 	}
 
 }
